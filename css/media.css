@@ -1,0 +1,82 @@
+@media (max-width: 600px) {
+  .menu-container .overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 99999;
+  }
+  .menu-container .overlay.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .menu-container .mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    background-color: #ffffff;
+    transform: translateX(-100%);
+    transition: all 0.4s ease;
+    z-index: 99999;
+  }
+  .menu-container .mobile-nav.active {
+    transform: translateX(0);
+    padding: 0;
+  }
+  .menu-container .mobile-nav .logo {
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 120px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .menu-container .mobile-nav .logo img {
+    padding: 10px;
+  }
+  .menu-container .mobile-nav .logo span {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 10px;
+    background-color: #fff;
+  }
+  .menu-container .mobile-nav .mobile-section {
+    padding: 30px;
+  }
+  .menu-container .mobile-nav .mobile-section h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .menu-container .mobile-nav .mobile-section .mobile-menu li {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    font-weight: 500;
+  }
+  .menu-container .mobile-nav .mobile-section .mobile-menu li span {
+    width: 20px;
+    text-align: center;
+    margin-right: 15px;
+  }
+  .menu-container .mobile-nav .mobile-section .mobile-menu li a {
+    font-size: 16px;
+  }
+  .fixed-menu .menu > li.mobile {
+    display: inline-block;
+    visibility: visible;
+  }
+}

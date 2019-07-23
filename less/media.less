@@ -1,0 +1,166 @@
+// out: ../css/media.css
+
+@media (max-width: 1200px) {
+    .fullpage-container {
+        
+
+        .section {
+            
+    
+            .bg {
+                
+            }
+            .content {
+               
+    
+                .title {
+                    
+                }
+                .text {
+                    
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 900px) {
+    
+}
+
+@media (max-width: 600px) {
+    .menu-container {
+        .overlay {
+            display: block;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, .5);
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.5s ease;
+            z-index: 99999;
+    
+            &.active {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    
+        .mobile-nav {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 60%;
+            background-color: #ffffff;
+            transform: translateX(-100%);
+            transition: all 0.4s ease;
+            z-index: 99999;
+    
+            &.active {
+                transform: translateX(0);
+                padding: 0;
+            }
+    
+            .logo {
+                padding: 10px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-height: 120px;
+                box-sizing: border-box;
+                position: relative;
+    
+                img {
+                    padding: 10px;
+    
+                }
+                span {
+                    z-index: 3;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 8px 10px;
+                    background-color: #fff;
+                }
+            }
+    
+            .mobile-section {
+                padding: 30px;
+    
+                h6 {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                    font-size: 18px;
+                }
+    
+                .mobile-menu {
+                    li {
+                        border-bottom: 1px solid #eee;
+                        margin-bottom: 20px;
+                        padding: 15px 0;
+                        font-weight: 500;
+                        span {
+                            width: 20px;
+                            text-align: center;
+                            margin-right: 15px;
+                        }
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .fixed-menu {
+        
+    
+        .menu {
+           
+    
+            > li {
+                
+                
+                &.mobile {
+                    display: inline-block;
+                    visibility: visible;
+                }
+    
+                > a, span {
+                   
+    
+                   
+                }
+            }
+        }
+    }
+    
+    .fullpage-container {
+        .section {
+            
+    
+            .bg {
+                
+            }
+            .content {
+              
+    
+                .title {
+                    
+                }
+                .text {
+                    
+                }
+            }
+        }
+    }
+}
+
+

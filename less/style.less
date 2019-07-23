@@ -1,0 +1,119 @@
+// out: ../css/style.css
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Tahoma";
+}
+h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-weight: 400;
+    font-family: "Tahoma";
+    font-size: 14px;
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu-container {
+	.overlay {
+		display: none;
+
+		.mobile-nav {
+			display: none;
+			padding: 15px 10px;
+		
+			.logo {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 10px;
+
+				img {
+					width: 50%;
+				}
+				a {
+		
+				}
+			}
+			ul {
+		
+				li {
+					margin-bottom: 5px;
+					a {
+					}
+				}
+			}
+		}
+	}
+}
+
+.fixed-menu {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    .menu {
+        text-align: center;
+
+        > li {
+            display: inline-block;
+            
+            &.mobile {
+                display: none;
+            }
+
+            > a, span {
+                padding: 15px;
+                display: block;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #eee;
+                }
+            }
+        }
+    }
+}
+
+.fullpage-container {
+    .section {
+        position: relative;
+        background-color: #000;
+
+        .bg {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: 1;
+            opacity: 0.4;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+
+            .title {
+                font-size: 25px;
+                text-align: center;
+                color: #fff;
+            }
+            .text {
+                text-align: center;
+                color: #fff;
+                line-height: 170%;
+                max-width: 600px;
+                margin: 10px auto;
+            }
+        }
+    }
+}

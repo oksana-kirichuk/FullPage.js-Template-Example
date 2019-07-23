@@ -1,0 +1,107 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a,
+span,
+div,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-weight: 400;
+  font-family: "Tahoma";
+  font-size: 14px;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+}
+.menu-container .overlay {
+  display: none;
+}
+.menu-container .overlay .mobile-nav {
+  display: none;
+  padding: 15px 10px;
+}
+.menu-container .overlay .mobile-nav .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.menu-container .overlay .mobile-nav .logo img {
+  width: 50%;
+}
+.menu-container .overlay .mobile-nav ul li {
+  margin-bottom: 5px;
+}
+.fixed-menu {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.fixed-menu .menu {
+  text-align: center;
+}
+.fixed-menu .menu > li {
+  display: inline-block;
+}
+.fixed-menu .menu > li.mobile {
+  display: none;
+}
+.fixed-menu .menu > li > a,
+.fixed-menu .menu > li span {
+  padding: 15px;
+  display: block;
+  cursor: pointer;
+}
+.fixed-menu .menu > li > a:hover,
+.fixed-menu .menu > li span:hover {
+  background-color: #eee;
+}
+.fullpage-container .section {
+  position: relative;
+  background-color: #000;
+}
+.fullpage-container .section .bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  opacity: 0.4;
+}
+.fullpage-container .section .content {
+  position: relative;
+  z-index: 2;
+}
+.fullpage-container .section .content .title {
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+}
+.fullpage-container .section .content .text {
+  text-align: center;
+  color: #fff;
+  line-height: 170%;
+  max-width: 600px;
+  margin: 10px auto;
+}
