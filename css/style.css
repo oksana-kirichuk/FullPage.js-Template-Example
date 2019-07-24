@@ -42,6 +42,7 @@ input {
 }
 .menu-container .mobile-nav .mobile-section ul .mobile-menu {
   margin-bottom: 5px;
+  cursor: pointer;
 }
 .fixed-menu {
   background-color: #fff;
