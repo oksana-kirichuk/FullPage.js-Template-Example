@@ -2,6 +2,8 @@ var fpApi = $.fn.fullpage;
 
 $('.fullpage-container').fullpage({
     // fullpage_api.setResponsive(true),
+    // result as when activating the responsiveWidth or responsiveHeight options
+
     responsiveHeight: 600,
     navigation: true,
     navigationPosition: 'right',
@@ -11,10 +13,6 @@ $('.fullpage-container').fullpage({
     slidesNavPosition: 'bottom',
     controlArrows: false, // стрелки слайда
     scrollOverflow: true, // прокрутка если контент превышает высоту слайда
-
-
-
-    // result as when activating the responsiveWidth or responsiveHeight options
 
 });
 
