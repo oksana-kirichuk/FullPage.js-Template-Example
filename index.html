@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic-ext,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title>fullPage.js test</title>
@@ -33,6 +34,10 @@
 </div>
 
 <div class="fixed-menu">
+    <div class="menu-image">
+        <img src="img/development.png" alt="">
+    </div>
+    
     <ul class="menu">
         <li data-section-anchor="section1"><span>Section 1</span></li>
         <li data-section-anchor="section2"><span>Section 2</span></li>
@@ -62,11 +67,9 @@
         </div>
     </div>
     <div class="section" data-anchor="section3">
-        <div class="bg" style="background-image: url(img/bg3.jpg)"></div>
-        <div class="content">
-            <h4 class="title">Some section title 3</h4>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id possimus tenetur necessitatibus praesentium molestias tempora quae architecto veritatis, similique vero, consequuntur inventore obcaecati veniam labore non impedit officiis, commodi nobis?</p>
-        </div>
+        <div class="slide" id="slide1" style="background-image: url(img/slide1.jpg)"> Slide 1 </div>
+        <div class="slide" id="slide1" style="background-image: url(img/slide2.jpg)"> Slide 2 </div>
+        <div class="slide" id="slide1" style="background-image: url(img/slide3.jpg)"> Slide 3 </div>
     </div>
     <div class="section" data-anchor="section4">
         <div class="bg" style="background-image: url(img/bg4.jpg)"></div>

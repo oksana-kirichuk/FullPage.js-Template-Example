@@ -26,7 +26,27 @@
 }
 
 @media (max-width: 900px) {
+    .fullpage-container {
+        .section {
+            
     
+            .bg {
+                background-position: top center;
+                background-size: cover;
+            }
+            .content {
+              
+    
+                .title {
+                    
+                }
+                .text {
+                    max-width: 450px;
+                    
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -120,17 +140,31 @@
         }
     }
     .fixed-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         
-    
+        
+
+        .menu-image {
+            display: block;
+            float: left;
+            padding-left: 20px;
+
+            img {
+                width: 100px;
+            }
+        }
         .menu {
            
     
             > li {
-                
+                display: none;
                 
                 &.mobile {
                     display: inline-block;
                     visibility: visible;
+                    float: right;
                 }
     
                 > a, span {
@@ -147,16 +181,17 @@
             
     
             .bg {
-                
+                background-position: top center;
+                background-size: cover;
             }
             .content {
-              
-    
-                .title {
                     
+                .title {
+                    font-size: 1rem;
                 }
                 .text {
-                    
+                    max-width: 280px;
+                    font-size: 0.8rem;
                 }
             }
         }

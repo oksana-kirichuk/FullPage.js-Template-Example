@@ -30,20 +30,17 @@ input {
 .menu-container .overlay {
   display: none;
 }
-.menu-container .overlay .mobile-nav {
+.menu-container .mobile-nav {
   display: none;
   padding: 15px 10px;
 }
-.menu-container .overlay .mobile-nav .logo {
+.menu-container .mobile-nav .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
-.menu-container .overlay .mobile-nav .logo img {
-  width: 50%;
-}
-.menu-container .overlay .mobile-nav ul li {
+.menu-container .mobile-nav .mobile-section ul .mobile-menu {
   margin-bottom: 5px;
 }
 .fixed-menu {
@@ -53,6 +50,9 @@ input {
   left: 0;
   right: 0;
   z-index: 100;
+}
+.fixed-menu .menu-image {
+  display: none;
 }
 .fixed-menu .menu {
   text-align: center;
@@ -85,9 +85,12 @@ input {
   left: 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   z-index: 1;
   opacity: 0.4;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .fullpage-container .section .content {
   position: relative;

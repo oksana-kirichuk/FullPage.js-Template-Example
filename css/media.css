@@ -1,3 +1,12 @@
+@media (max-width: 900px) {
+  .fullpage-container .section .bg {
+    background-position: top center;
+    background-size: cover;
+  }
+  .fullpage-container .section .content .text {
+    max-width: 450px;
+  }
+}
 @media (max-width: 600px) {
   .menu-container .overlay {
     display: block;
@@ -75,8 +84,36 @@
   .menu-container .mobile-nav .mobile-section .mobile-menu li a {
     font-size: 16px;
   }
+  .fixed-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fixed-menu .menu-image {
+    display: block;
+    float: left;
+    padding-left: 20px;
+  }
+  .fixed-menu .menu-image img {
+    width: 100px;
+  }
+  .fixed-menu .menu > li {
+    display: none;
+  }
   .fixed-menu .menu > li.mobile {
     display: inline-block;
     visibility: visible;
+    float: right;
+  }
+  .fullpage-container .section .bg {
+    background-position: top center;
+    background-size: cover;
+  }
+  .fullpage-container .section .content .title {
+    font-size: 1rem;
+  }
+  .fullpage-container .section .content .text {
+    max-width: 280px;
+    font-size: 0.8rem;
   }
 }

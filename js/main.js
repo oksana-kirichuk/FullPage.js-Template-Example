@@ -1,6 +1,20 @@
 var fpApi = $.fn.fullpage;
 
 $('.fullpage-container').fullpage({
+    // fullpage_api.setResponsive(true),
+    responsiveHeight: 600,
+    navigation: true,
+    navigationPosition: 'right',
+    navigationTooltips: ['Section 1', 'Section 2','Section 3','Section 4','Section 5'],
+    showActiveTooltip: true,
+    slidesNavigation: true,
+    slidesNavPosition: 'bottom',
+    controlArrows: false, // стрелки слайда
+    scrollOverflow: true, // прокрутка если контент превышает высоту слайда
+
+
+
+    // result as when activating the responsiveWidth or responsiveHeight options
 
 });
 
