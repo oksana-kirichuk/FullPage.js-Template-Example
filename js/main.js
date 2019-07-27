@@ -1,27 +1,60 @@
+// var fpApi = $.fn.fullpage;
+
+// $('.fullpage-container').fullpage({
+//     // fullpage_api.setResponsive(true),
+//     // result as when activating the responsiveWidth or responsiveHeight options
+
+//     responsiveHeight: 600,
+//     navigation: true,
+//     navigationPosition: 'right',
+//     navigationTooltips: ['Section 1', 'Section 2','Section 3','Section 4','Section 5'],
+//     showActiveTooltip: true,
+//     slidesNavigation: true,
+//     slidesNavPosition: 'bottom',
+//     controlArrows: false,
+//     scrollOverflow: true, // прокрутка если контент превышает высоту слайда
+
+// });
+
+// $('[data-section-anchor]').click(function () {
+//     var target = $(this).attr('data-section-anchor');
+//     fpApi.moveTo(target);
+// });
+
+var width = $(window).width();
+
+if (width > 600) {
+
+    var fpApi = $.fn.fullpage;
+
+    $('.fullpage-container').fullpage({
+        responsiveHeight: 600,
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Section 1', 'Section 2','Section 3','Section 4','Section 5'],
+        showActiveTooltip: true,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+        controlArrows: false,
+        scrollOverflow: true, 
+
+    });
+
+    $('[data-section-anchor]').click(function () {
+        var target = $(this).attr('data-section-anchor');
+        fpApi.moveTo(target);
+    });
+}
 
 
-var fpApi = $.fn.fullpage;
 
-$('.fullpage-container').fullpage({
-    // fullpage_api.setResponsive(true),
-    // result as when activating the responsiveWidth or responsiveHeight options
 
-    responsiveHeight: 600,
-    navigation: true,
-    navigationPosition: 'right',
-    navigationTooltips: ['Section 1', 'Section 2','Section 3','Section 4','Section 5'],
-    showActiveTooltip: true,
-    slidesNavigation: true,
-    slidesNavPosition: 'bottom',
-    controlArrows: false,
-    scrollOverflow: true, // прокрутка если контент превышает высоту слайда
 
-});
 
-$('[data-section-anchor]').click(function () {
-    var target = $(this).attr('data-section-anchor');
-    fpApi.moveTo(target);
-})
+
+
+
+
 
 
 var selectorMobile = document.querySelectorAll('[data-mobile]');

@@ -109,6 +109,9 @@
     background-position: top center;
     background-size: cover;
   }
+  .fullpage-container .section .content {
+    padding: 35% 15%;
+  }
   .fullpage-container .section .content .title {
     font-size: 1rem;
   }
