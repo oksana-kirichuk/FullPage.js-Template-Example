@@ -37,7 +37,6 @@ if (width > 600) {
         slidesNavPosition: 'bottom',
         controlArrows: false,
         scrollOverflow: true, 
-
     });
 
     $('[data-section-anchor]').click(function () {
@@ -45,16 +44,6 @@ if (width > 600) {
         fpApi.moveTo(target);
     });
 }
-
-
-
-
-
-
-
-
-
-
 
 
 var selectorMobile = document.querySelectorAll('[data-mobile]');
