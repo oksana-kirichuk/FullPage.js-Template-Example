@@ -51,6 +51,19 @@ input {
   left: 0;
   right: 0;
   z-index: 100;
+  transition: all 0.3 ease;
+}
+.fixed-menu.dark {
+  background-color: #333;
+}
+.fixed-menu.dark .menu > li > a,
+.fixed-menu.dark .menu > li > span {
+  color: #fff;
+  transition: color 0.3 ease;
+}
+.fixed-menu.dark .menu > li > a:hover,
+.fixed-menu.dark .menu > li > span:hover {
+  background-color: #222;
 }
 .fixed-menu .menu-image {
   display: none;
@@ -65,18 +78,27 @@ input {
   display: none;
 }
 .fixed-menu .menu > li > a,
-.fixed-menu .menu > li span {
+.fixed-menu .menu > li > span {
   padding: 15px;
   display: block;
   cursor: pointer;
 }
 .fixed-menu .menu > li > a:hover,
-.fixed-menu .menu > li span:hover {
+.fixed-menu .menu > li > span:hover {
   background-color: #eee;
 }
 .fullpage-container .section {
   position: relative;
   background-color: #000;
+}
+.fullpage-container .section.white {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.fullpage-container .section.white .content .title {
+  color: #000;
+}
+.fullpage-container .section.white .content .text {
+  color: #000;
 }
 .fullpage-container .section .bg {
   position: absolute;
@@ -96,6 +118,13 @@ input {
 .fullpage-container .section .content {
   position: relative;
   z-index: 2;
+  opacity: 0;
+  transition: all 0.3 ease;
+  transform: translateY(-10px);
+}
+.fullpage-container .section .content.active {
+  opacity: 1;
+  transform: none;
 }
 .fullpage-container .section .content .title {
   font-size: 25px;

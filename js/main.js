@@ -28,6 +28,7 @@ if (width > 600) {
     var fpApi = $.fn.fullpage;
 
     $('.fullpage-container').fullpage({
+
         responsiveHeight: 600,
         navigation: true,
         navigationPosition: 'right',
@@ -37,6 +38,19 @@ if (width > 600) {
         slidesNavPosition: 'bottom',
         controlArrows: false,
         scrollOverflow: true, 
+
+        afterLoad: function(currentAnchor, currentIndex) {
+            var $currentSection = $('[data-anchor="' + currentAnchor + '"]');
+    
+            $('.section .content').removeClass('active');
+            $currentSection.find('.content').addClass('active');
+        },
+        onLeave: function(prevIndex, currentIndex, direction) {
+            var $menu = $('.fixed-menu');
+            var $currentSection = $('[data-index="' + currentIndex + '"]');
+    
+            ($currentSection.hasClass('white')) ? $menu.addClass('dark') : $menu.removeClass('dark');
+        }
     });
 
     $('[data-section-anchor]').click(function () {
